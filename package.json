@@ -1,0 +1,22 @@
+{
+  "name": "cjrvvs.run",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "baseui": "9.84.0",
+    "styletron-engine-atomic": "1.4.6",
+    "styletron-react": "5.2.7",
+    "styletron-standard": "3.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}
