@@ -36,9 +36,14 @@ const theme = createTheme(
 
       buttonMinimalSelectedFill: colors.blue50,
 
+      toggleFillChecked: colors.black,
+
       tickFillSelected: colors.black,
       tickFillSelectedHover: colors.gray700,
       tickFillSelectedHoverActive: colors.gray600,
+
+      sliderHandleInnerFillSelectedHover: colors.black,
+      sliderHandleInnerFillSelectedActive: colors.gray500,
     },
   }
 );
