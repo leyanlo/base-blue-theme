@@ -2,11 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import { BaseProvider, createTheme, LightTheme } from "baseui";
+import { Heading, HeadingLevel } from "baseui/heading";
 import { colors } from "baseui/tokens";
 import { Provider as StyletronProvider } from "styletron-react";
 import { Client as Styletron } from "styletron-engine-atomic";
 
-import Example from "./example";
+import Buttons from "./buttons";
+import Checkboxes from "./checkboxes";
+import Radios from "./radios";
 
 const engine = new Styletron();
 
@@ -20,7 +23,7 @@ const theme = createTheme(
     primary400: colors.blue400,
     primary500: colors.blue500,
     primary600: colors.blue600,
-    primary700: colors.blue700
+    primary700: colors.blue700,
   },
   {
     colors: {
@@ -32,12 +35,28 @@ const theme = createTheme(
       buttonTertiarySelectedFill: colors.blue50,
 
       buttonMinimalSelectedFill: colors.blue50,
-    }
+
+      tickFillSelected: colors.black,
+      tickFillSelectedHover: colors.gray700,
+      tickFillSelectedHoverActive: colors.gray600,
+    },
   }
 );
 
 function App() {
-  return <Example />;
+  return (
+    <HeadingLevel>
+      <Heading>Base Web Blue Theme</Heading>
+      <HeadingLevel>
+        <Heading>Buttons</Heading>
+        <Buttons />
+        <Heading>Checkboxes</Heading>
+        <Checkboxes />
+        <Heading>Radios</Heading>
+        <Radios />
+      </HeadingLevel>
+    </HeadingLevel>
+  );
 }
 
 const rootElement = document.getElementById("root");
